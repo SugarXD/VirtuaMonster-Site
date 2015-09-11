@@ -3,7 +3,7 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <title>Bootstrap Example</title>
+  <title>Virtua Monster</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,15 +16,23 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="#">VirtuaMonster</a>
                 </div>
+                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href"#">Gameplay Guide</a></li>
-                        <li><a href"#">Monsters</a></li>
-                        <li><a href"#">Items</a></li>
-                        <li><a href"#">About</a></li>
+                        <li><a href="#">Gameplay Guide</a></li>
+                        <li><a href="#">Monsters</a></li>
+                        <li><a href="#">Items</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
+                </div>
             </div>
         </nav>
         <!-- Navigtation Bar End -->
@@ -33,7 +41,7 @@
                 <p>An incremental game where you raise and evolve your monster.</p>
         </div>
         <!-- Start Featurette's Container -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="mainContent">
             <hr class="featurette-divider">
             <!-- Start Featurette -->
             <div class="row featurette">
@@ -89,7 +97,7 @@
         <!-- Start Footer -->
         <footer>
             <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2015 Kirby Owens. &middot; <a href-"#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p>&copy; 2015 Kirby Owens. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
         <!-- End Footer -->
      
