@@ -3,6 +3,7 @@ html {
   min-height: 100%;
 }
 body {
+  background-color: white;
   min-height: 100%;
   padding-bottom: 60px;
 }
@@ -18,18 +19,43 @@ footer {
 .jumbotron{
     background: url('images/jumbotronmod.jpg');
     color: white;
-    text-shadow: black 0.2em 0.2em 0.2em;
-    height: 450px;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    height: 600px;
     width: 100%;
 }
+/*Center text */
 .jumbotron h1, p{
+    margin-bottom: 0;
     text-align: center;
+}
+.jumbotron h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 .navbar{
     padding: 14px 10px;
-    margin: 0;
+    margin-bottom: 0;
 }
+/* Set the height of the navagation bar. */
+.navbar-brand,
+.navbar-nav li a{
+    line-height: 30px;
+    height: 30px;
+    padding-top: 0;
+}
+/* Add some padding to the left and right of the page.*/
 .container-fluid{
     padding-left: 50px;
     padding-right: 50px;
+}
+.featurette-heading{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 400;  
+}
+/* Add more spaceing between featurettes.*/
+.featurette-divider{
+    margin: 85px 0;
 }
