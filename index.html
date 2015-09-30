@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="effects.js"></script>
 </head>
     <body>
-        <!-- Start Navigation Bar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Start Navigation Bar navbar-fixed-top-->
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top transparent-navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -25,8 +27,8 @@
                     <a class="navbar-brand" href="#">VirtuaMonster</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="#">Home</a></li>
                         <li><a href="#">Gameplay Guide</a></li>
                         <li><a href="#">Monsters</a></li>
                         <li><a href="#">Items</a></li>
@@ -36,21 +38,20 @@
             </div>
         </nav>
         <!-- Navigtation Bar End -->
-        <div class="jumbotron">
+       <div class="jumbotron">
             <h1>VirtuaMonster</h1>
                 <p>An incremental game where you raise and evolve your monster.</p>
         </div>
         <!-- Start Featurette's Container -->
         <div class="container-fluid" id="mainContent">
-            <hr class="featurette-divider">
             <!-- Start Featurette -->
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h1 class="featurette-heading">Created using Apache Cordova.</h1>
+                    <h1 class="featurette-heading">Hatch Your Monster</h1>
                     <p class="lead">Apache Cordova is a platform that allows developers to create multi-platform and native applications using HTML, CSS, and Javascript. This means that VirtuaMonster can be enjoyed on almost every mobile device.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block"       src="https://cordova.apache.org/images/cordova_bot.png" alt="responsive image">
+                    <img class="featurette-image img-responsive center-block"       src="images/cordova_bot.png" alt="responsive image">
                 </div>
             </div>
             <!-- End Featurette -->
@@ -58,35 +59,55 @@
             <!-- Start Featurette -->
             <div class="row featurette">
                 <div class="col-md-7 col-md-push-5">
-                    <h1 class="featurette-heading">Power-Up Your Monster! <span class="text-muted"> Spend ability points as your monster grows.</span></h1>
+                    <h1 class="featurette-heading">Buy Upgrades!<span class="text-muted"> To help your monster grow while you are away.</span></h1>
                     <p class="lead">As your monster grows, you gain points. Use these points to buy meteors that will increase your monster's growth rate. Buy carefully though, because what meteors you choose and how many of each you have will determine what your monster will evolve into.</p>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block"       src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/12/22/1419232727889/c3483525-2365-40af-9c64-fe17eb96edb9-620x372.jpeg" alt="responsive image">
+                    <img class="featurette-image img-responsive center-block"       src="images/featurettePlaceholder.gif" alt="responsive image">
                 </div>
             </div>
             <!-- End Featurette -->
+            <hr class="featurette-divider">
+            <!-- Start Featurette -->
+            <div class="row evolution">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="images/evolutionPlaceholder.gif" alt="Stage 1">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-circle" src="images/evolutionPlaceholder.gif" alt="Stage 1">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-circle" src="images/evolutionPlaceholder.gif" alt="Stage 1">
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                </div>
+            </div>
+             <!-- End Featurette -->
             <hr class="featurette-divider">
             <!-- Start Featurette -->
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h1 class="featurette-heading">Customize with Items! <span class="text-muted"> Equipt Style Sheets to your monster to change its appearence.</span></h1>
+                    <h1 class="featurette-heading">Evolve: <span class="text-muted">Become More Powerful!</span></h1>
                     <p class="lead">As you raise your monster you will recieve currency for special events like leveling your monster up or evolveing it. Use this currency for items to take care of your monster such as food and bandages, but also use it to buy style sheets which will alow you to customize your monster.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block"       src="http://simpleicon.com/wp-content/uploads/money-bag-2.png" alt="responsive image">
+                    <img class="featurette-image img-responsive center-block"       src="images/featurettePlaceholder.gif" alt="responsive image">
                 </div>
             </div>
             <!-- End Featurette -->
             <hr class="featurette-divider">
             <!-- Start Featurette -->
-            <div class="row featurette">
+            <div class="row featurette last">
                 <div class="col-md-7 col-md-push-5">
                     <h1 class="featurette-heading">Check out my demo.</h1>
                     <p class="lead">Although my game is in alpha, android users can download and check out my demo here.</p>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block"       src="https://cdn0.iconfinder.com/data/icons/mobile-devices/512/Rectangle_7-512.png" alt="responsive image">
+                    <img class="featurette-image img-responsive center-block"       src="images/featurettePlaceholder.gif" alt="responsive image">
                 </div>
             </div>
             <!-- End Featurette -->
@@ -96,8 +117,28 @@
                
         <!-- Start Footer -->
         <footer>
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2015 Kirby Owens. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          <div class="container-fluid">
+            <div class="row">
+            <div class = "col-sm-3">
+                <h3>Section One</h3>
+                <p>Column of 4 width..... #1 Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+            <div class = "col-sm-3">
+                <h3>Section Two</h3>
+                <p>Column of 4 width..... #1 Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+            <div class = "col-sm-3">
+                <h3>Section Three</h3>
+                <p>Column of width 4, #2 medium. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+            <div class = "col-sm-3">
+                <h3>Section Four</h3>
+                <p> Column of width 4, # 3. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            </div>
+            <!--<p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2015 Kirby Owens. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
+              </div>
+            </div>
         </footer>
         <!-- End Footer -->
      

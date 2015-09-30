@@ -9,6 +9,21 @@ body {
   min-height: 100%;
   padding-bottom: 60px;
 }
+/*Make navbar transparent*/
+.transparent-navbar{
+    border-bottom: 0px;
+    background-color: rgba(0,0,0,0.0);
+    height: 50px;
+    transition: background-color .9s ease 0s;
+    
+}
+/*Make navbar not transparent. (uses effects.js)*/
+.transparent-navbar.transparent{
+    background-color: rgba(0,0,0,1.0);
+    height: 50px;
+    transition: background-color .9s ease 0s;
+}
+
 .jumbotron{
     background: url('images/jumbotronmod.jpg');
     color: white;
@@ -16,7 +31,7 @@ body {
     height: 100vh;
     width: 100%;
 }
-/*Center text Horizontally*/
+/*Center text in Jumbotron*/
 .jumbotron h1, p{
     margin-bottom: 0;
     text-align: center;
@@ -27,10 +42,24 @@ body {
     letter-spacing: 2px;
     padding-top: 185px;
 }
+/*Change brand's text color.*/
+.navbar-inverse .navbar-header .navbar-brand{
+    color:white;
+    margin-left: 0px;
+}
+/*Change Link's colors and text details*/
+.navbar-nav > li > a:active, .navbar-nav > li > a:hover, .navbar-nav > li > a:visited, .navbar-nav > li > a:link{
+    margin-right: 0px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
 /* Changes nav bar's height. */
 .navbar-nav > li > a, .navbar-brand {
     padding-top:15px !important; 
     padding-bottom:0 !important;
+    font-weight: 600;
     height: 50px;
 }
 /* Sets nav bar's min height. */
@@ -49,24 +78,55 @@ body {
     letter-spacing: -1px;
     font-weight: 400;  
 }
+.evolution{
+    text-align: center;
+}
+.evolution img{
+    padding-top: 12px;
+}
  /*Add more spaceing between featurettes.*/
 .featurette-divider{
-    margin: 85px 0;
+    margin: 80px 0;
+}
+.last{
+    padding-bottom: 300px;
 }
 footer {
   position: absolute;
-  padding: 20px;
+  padding: 50px;
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-color: #f5f5f5;
 }
+footer .col-md-3 {
+    text-align: center;
+}
 
- /*Responsive CSS
+ /*Responsive CSS   (change padding for heading in jumbotron)
 ---------------------------- */
 @media (min-width: 768px){
     .featurette-heading{
-        font-size: 45px;
+        font-size: 35px;
     }
+    .text-muted{
+        font-size 20px;
+    }
+    
+}
+
+/*Make navbar list opaque only while in mobile mode.*/
+@media (max-width: 767px){
+    .navbar-collapse{
+        background-color: rgba(0,0,0,1.0);
+    }
+    
+}
+
+@media(max-height: 350px){
+    .jumbotron h1{
+         padding-top: 60px;
+    }
+    
 }
